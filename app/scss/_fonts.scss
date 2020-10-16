@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "GothaMed";
+  src: url("../font/GothaProMed.eot");
+  src: local("☺"), url("../font/GothaProMed.woff") format("woff"),
+    url("../font/GothaProMed.ttf") format("truetype"),
+    url("../font/GothaProMed.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GothaBla";
+  src: url("../font/GothaProBla.eot");
+  src: local("☺"), url("../font/GothaProBla.woff") format("woff"),
+    url("../font/GothaProBla.ttf") format("truetype"),
+    url("../fontsGothaProBla.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

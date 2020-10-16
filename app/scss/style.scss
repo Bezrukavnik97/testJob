@@ -1,0 +1,236 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+
+body{
+    background-image: url(../img/bg.svg);
+    box-sizing: border-box;
+}
+
+.modal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    position: absolute;
+    display: none;
+    }
+.modal__body{
+    
+    max-width: 500px;
+    background-color: rgb(97, 92, 92);
+    position: fixed;
+    z-index: 5;
+    top: 220px;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+ .modal__text{
+     padding: 50px;
+     font-family: 'GothaMed';
+     font-size: 16px;
+ }   
+ .modal__close {
+     cursor: pointer;
+     color: white;
+     background-color: red;
+     width: 20px;
+     position: absolute;
+     top: 5px;
+     right: 5px;
+     text-align: center;
+ }
+.ibg img {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+.wrap{
+    max-width: 900px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 60%, rgba(249,249,249,1) 100%);
+    margin: 0 auto;
+    height: auto;
+   
+}
+.header{
+    display: inline-block;
+    position: relative;
+    background-color: #fff;
+    height: 90px;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    left: 0px;
+    
+    &__logo{
+        width: 16.7%;
+        height: 60px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        margin-left: 30px;
+    }
+    &__text{
+        text-transform: uppercase;
+        font-size: calc(12px + 8 * (100vw / 900));
+        font-family: 'GothaMed';
+        margin-left: 30px;
+    }
+    &__link{
+       position: absolute;
+       right: 30px;
+       min-width: 15%;
+       display: flex;
+       justify-content: space-between;
+
+       &-facebook{
+        width: 10px;
+        height: 26px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-left: 30px;
+        cursor: pointer;
+       }
+       &-instagram{
+        width: 30px;
+        height: 26px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+       }
+       
+   }
+}
+.banner{
+    width: 100%;
+    max-height: 480px;
+    padding: -30px ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.main{padding: 0 30px;}
+.main__head{
+    padding: 20px 40px;
+    
+    &-text{
+    font-family: 'GothaMed';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: 19px;
+    letter-spacing: -0.01em;
+    text-align: center;
+
+
+    }
+}
+.numberBlock{
+    width: 60px;
+    height: 60px;
+    margin: 30px auto;
+    border: 6px solid #E00027;
+    text-align: center;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    &_text{
+      color: #E00027;
+      font-size: 32px;
+      font-family: 'GothaMed';
+      font-weight: bold;
+    }
+}
+.number__indent{margin-top: 0px;}
+.main__header{
+font-family: 'GothaMed';
+font-size: 24px;
+font-weight: 700;
+line-height: 29px;
+text-align: center;
+
+}
+.main__card{
+    width: 259px;
+    height: 282px;
+    background-size: contain; 
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.main__card-list{
+    display: flex;
+    padding: 0 60px;
+}
+.main__stars{
+height: 80px;
+width: 200px;
+margin: auto;
+display: flex;
+justify-content: space-around;
+&-item{
+width: 15px;
+height: 15px;
+background-color: #E00027;;
+clip-path: polygon(50% 0%, 64% 30%, 98% 35%, 76% 55%, 79% 91%, 50% 75%, 21% 91%, 23% 58%, 2% 35%, 36% 31%);
+border: 5px solid #E00027;;
+cursor: pointer;
+
+}
+}
+.video{
+    height: auto;
+    width: 100%;
+    &__position{
+        margin-top: 90px;
+    }
+    &__head{
+        text-align: center;
+        width: auto;
+        font-family: 'GothaMed';
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+    }
+    &__link{
+        height: 500px;
+        max-width: 800px;
+        padding: 0 10px;
+        margin: 0 auto;
+        & iframe{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+    }
+
+}
+.terms{
+margin: 30px auto;
+width: 100%;
+display: flex;
+justify-content: center;
+& p{
+ font-family: 'GothaMed';
+font-size: 16px;
+font-weight: 325;
+line-height: 19px;
+text-align: center;
+color: #001AFF; 
+text-decoration-line: underline;  
+cursor: pointer;
+}
+}
+.rights{
+    padding-left: 40px;
+    font-family: 'GothaMed';
+    font-size: 14px;
+    color: rgb(117, 117, 117);
+}
+.show{display: block;}
+@import "media";

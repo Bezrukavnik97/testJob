@@ -1,0 +1,21 @@
+@media (max-width: 900px){
+    .main__card-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__card{
+        width: 179px;
+        height: 202px;
+    }
+    .video__head{padding: 0 30px; font-size: 20px;}
+}
+@media (max-width: 500px){
+   .header__logo{width: 20%;}
+   .header__text{margin-left: 10px;}
+   .main__head{padding: 0px;}
+   .rights{
+    padding-left: 20px;
+    font-size: 10px;
+}
+}
